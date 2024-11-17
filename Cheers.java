@@ -22,12 +22,10 @@ public class Cheers {
 
             // Print spelling
             int j = 0;
-            if (shouting != 0) {
-                System.out.println("What does that spell?");
-                while (j < shouting) {
-                        System.out.println(upperWord + "!!!");
-                        j ++;
-                }
+            System.out.println("What does that spell?");
+            while (j < shouting) {
+                System.out.println(upperWord + "!!!");
+                j ++;
             }
         }
 }
