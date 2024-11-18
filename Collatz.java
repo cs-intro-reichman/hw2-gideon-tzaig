@@ -44,6 +44,6 @@ public class Collatz {
 		}
 
 		// Print summary sentance 
-		System.out.printf("%nEvery one of the first %d hailstone sequences reached 1.", algoNumber);
+		System.out.printf("Every one of the first %d hailstone sequences reached 1.", algoNumber);
 	}
 }

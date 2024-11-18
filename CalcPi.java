@@ -5,9 +5,14 @@ public class CalcPi {
 		int numberOfIterations = Integer.parseInt(args[0]);
 		double glAlgo = (double) 1;
 		double glDiviosor = (double) 1;
-		int i = 0;
+		int i = 1;
 		while (i < numberOfIterations) {
-			glDiviosor = (-1) * (glDiviosor + 2);
+			if (glDiviosor < 0) {
+				glDiviosor = (-1) * (glDiviosor - 2);
+			}
+			else {
+				glDiviosor = (-1) * (glDiviosor + 2);
+			}
 			glAlgo = glAlgo + (1 / glDiviosor);
 			i ++;
 		}
@@ -15,6 +20,7 @@ public class CalcPi {
 		// Final calculation
 		double funcPi = glAlgo * 4;
 		double javaPi = Math.PI;
-		System.out.printf("pi according to java: %f %npi, approximated:     %f", javaPi, funcPi);
+		System.out.print("pi according to Java: " + javaPi);
+		System.out.printf("%npi, approximated:     " + funcPi);
 	}
 }
